@@ -1,6 +1,7 @@
-use crate::ports::cli::*;
+use crate::ports::cli::Info;
+use crate::components::dft::cli::Cli;
 
 pub fn run () {
-    let cli: Cli = Cli::new();
+    let cli = Cli::new();
     cli.wellcome();
 }

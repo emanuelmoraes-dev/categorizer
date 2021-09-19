@@ -1,8 +1,10 @@
 use crate::ports::cli;
 
-impl cli::Info for cli::Cli {
+pub struct Cli {}
+
+impl cli::Info for Cli {
     fn new() -> Self {
-        cli::Cli{}
+        Cli{}
     }
 
     fn wellcome(&self){
